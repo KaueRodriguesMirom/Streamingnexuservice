@@ -1160,7 +1160,8 @@ Proposta gerada via Portal Comercial Nexus Tech.
             const summaryText = `Olá! Segue a Proposta Comercial da Nexus Tech para *${clientName}*:\n\n*Serviços Selecionados:* ${Array.from(selectedServicesMap.values()).map(s => s.title).join(', ')}\n*Investimento Total (Pagamento Único):* R$ ${total.toLocaleString('pt-BR')},00\n*Manutenção:* 30 dias grátis inclusos (após, R$ 200,00/mês)\n*Horário de Atendimento:* 16:00 às 02:00\n\nPodemos agendar o kickoff do projeto?`;
             
             const encoded = encodeURIComponent(summaryText);
-            window.open(`https://wa.me/?text=${encoded}`, '_blank');
+            // Substitua SEU_NUMERO pelo seu número com 55 + DDD (ex: 5511999999999)
+            window.open(`https://wa.me/5511977692977?text=${encoded}`, '_blank');
         }
 
         function copyToClipboardText(text, successMsg) {
